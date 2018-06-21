@@ -52,7 +52,7 @@ app.get('/todos', (req, res) => {
 
 //get all users
 app.get('/users', (req, res) => {
-  User.find().then((todos) => {
+  User.find().then((users) => {
     res.send({users});
   }, (e) => {
    res.send(e);
